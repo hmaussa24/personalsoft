@@ -170,7 +170,7 @@ async function getViviendasGuardadas() {
 
 }
 
-
+/// funcion para guardar una vivienda en la base de datos
 function setVivienda(id) {
     $.get('data-1.json', function (data) {
         data.forEach(async element => {
@@ -208,7 +208,7 @@ function setVivienda(id) {
 
 }
 
-
+//funcion para que envia el id de la vivienda a eliminar
 async function eliminar(id) {
     await fetch('http://localhost/PersonalSoft/suplosBackEnd/php/Controladores/EliminarVivienda.php', {
         method: 'POST',

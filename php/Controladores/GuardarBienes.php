@@ -1,4 +1,5 @@
 <?php
+// controlador para guardar un bien en la base de datos
 include_once '../Clases/Bienes.php';
 
 $bienes = new Bienes();

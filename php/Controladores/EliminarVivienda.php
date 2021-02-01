@@ -1,4 +1,5 @@
 <?php
+//controlador para eliminar un bien de la base de datos
 include_once '../Clases/Bienes.php';
 
 $bienes = new Bienes();

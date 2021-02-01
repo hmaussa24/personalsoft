@@ -1,4 +1,5 @@
 <?php
+//Controlador para generar el reporte de excel
 include_once '../Clases/Bienes.php';
 $ficheroExcel = "usuarios " . date("d-m-Y H_i_s") . ".csv";
 

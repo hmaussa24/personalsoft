@@ -54,54 +54,7 @@ class DbConexion
         return $data;
     }
 
-    public function numColumnas($sql)
-    {
-        $result = $this->connection->query($sql);
-        $error = $this->connection->errorInfo();
 
-        if ($error[0] === "00000") {
-            $result->execute();
-            return $result->rowCount();
-        } else {
-            throw new Exception($error[2]);
-        }
-    }
-
-    public function getDataSingle($sql)
-    {
-
-        $result = $this->connection->query($sql);
-
-        $error = $this->connection->errorInfo();
-
-        if ($error[0] === "00000") {
-            $result->execute();
-            if ($result->rowCount() > 0) {
-                return $result->fetch(PDO::FETCH_ASSOC);
-            }
-        } else {
-            throw new Exception($error[2]);
-        }
-        return null;
-    }
-
-    public function getPropiedad($sql, $prop)
-    {
-
-        $result = $this->connection->query($sql);
-        $error = $this->connection->errorInfo();
-
-        if ($error[0] === "00000") {
-            $result->execute();
-            if ($result->rowCount() > 0) {
-                $data = $result->fetch(PDO::FETCH_ASSOC);
-                return $data[$prop];
-            }
-        } else {
-            throw new Exception($error[2]);
-        }
-        return null;
-    }
 
     public function InserData($sql)
     {
