@@ -91,7 +91,7 @@ video#vidFondo {
   color: #648C7D;
 }
 .colContenido{
-  width: 75%;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   align-content: space-between;
@@ -142,4 +142,27 @@ video#vidFondo {
 }
 .card-action{
   text-align: right;
+}
+
+.imagevivienda{
+ width: 250px;
+ height: 250px;
+ float: left;
+}
+
+.contenedorresultado{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.informacionvivienda{
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.botonguardar{
+  float: right;
+  margin-top: 5px;
 }
